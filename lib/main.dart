@@ -6,7 +6,6 @@ import 'package:blog_app/core/theme/theme.dart';
 import 'package:blog_app/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:blog_app/features/main_layout/data/repos/drawer_index_cubit/drawer_index_cubit.dart';
 import 'package:blog_app/features/main_layout/presentation/pages/curved_drawer.dart';
-import 'package:blog_app/features/main_layout/view/main_layout.dart';
 import 'package:blog_app/init_dependency.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -57,6 +56,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkThemeMode,
+    
       title: 'Flutter Demo',
       routerConfig: AppRouter.router,
     );

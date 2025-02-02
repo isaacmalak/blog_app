@@ -93,7 +93,7 @@ List<RouteBase> routes = [
           key: state.pageKey,
           child: BlocListener<AuthBloc, AuthState>(
             listener: (context, state) async {
-              await Future.delayed(const Duration(seconds: 1));
+              await Future.delayed(const Duration(seconds: 4));
               if (state is AuthLoginSuccess) {
                 AppRouter.router.go('/home');
               } else if (state is AuthInitial) {
